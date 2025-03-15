@@ -1,1 +1,190 @@
-Hello World
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elliot Weiner - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav>
+        <div class="nav-content">
+            <div class="logo">EW</div>
+            <div class="nav-links">
+                <a href="#about">About</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <header>
+        <h1>Portfolio</h1>
+        <!-- <p>I'm Elliot Weiner, a passionate developer.</p> -->
+    </header>
+
+    <section id="about">
+        <div class="container">
+            <h2>About Me</h2>
+            <div class="about-grid">
+                <!--<img src="img_girl.jpg" alt="Girl in a jacket" style="width:500px;height:600px;">-->
+                <img src="media/ElliotWeiner.jpeg" alt="Elliot Weiner" class="profile-image" style="width:20%;height:20%;display: block; margin: 0 auto;">
+                <br>
+                <div class="content-card">
+                    <p>
+                        I am passionate about building innovative ML and computer vision systems, from initial concept to deployment. 
+                        Based in Boston, Massachusetts, I specialize in developing cutting-edge solutions that combine robotics, 
+                        computer vision, and machine learning. Graduate of University of Rochester and current Masters student at Boston University College of Engineering 
+                        with a strong focus on practical applications of AI technology in real-world scenarios.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <div class="container">
+            <h2>Projects</h2>
+            
+            <h3 class="section-subheading">Ongoing Projects</h3>
+            <div class="projects-grid">
+                <div class="project-card current-project">
+                    <h3>DDR-Net</h3>
+                    <div class="project-content">
+                        <p class="project-description">
+                            A multi-headed deep learning model for predicting player steps in the popular game Dance Dance Revolution. 
+                            It uses a novel convolutional architecture trained on a custom dataset created from two camera angles. 
+                            By running this in real-time and leveraging pre-existing technologies, we can create an immersive multiplayer experience.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Pytorch</span>
+                            <span class="tech-tag">Multithreading</span>
+                            <span class="tech-tag">Deep Learning</span>
+                            <span class="tech-tag">Computer Vision</span>
+                        </div>
+                        <div class="project-status">
+                            <span class="status-tag">In Development</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card current-project">
+                    <h3>KENN: Fine-turned Lab Assistant</h3>
+                    <div class="project-content">
+                        <p class="project-description">
+                            A fine-tuned LLM assistant for the RASTIC center at Boston University.
+                            Its purpose is to handle all the basic duties of lab director Kenneth Sebesta.
+                            These include helping students network with other BU students and alumni, 
+                            giving directions around the lab, and providing basic engineering information/creative suggestions.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Foundation Models</span>
+                            <span class="tech-tag">Fine-tuning</span>
+                            <span class="tech-tag">RAG-based retrieval</span>
+                        </div>
+                        <div class="project-status">
+                            <span class="status-tag">Planning Phase</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br>
+
+            <h3 class="section-subheading">Previous Projects</h3>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <h3>TubeBot</h3>
+                    <div class="project-content">
+                        <p class="project-description">
+                            An innovative robotic solution designed to autonomously scale buildings and provide floodlighting 
+                            in urban environments. Combines advanced mechanical design with reinforcement learning for 
+                            autonomous climbing and dynamic lighting control.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">Reinforcement Learning</span>
+                            <span class="tech-tag">CoppeliaSim</span>
+                            <span class="tech-tag">Robotics</span>
+                        </div>
+                        <br>
+                        <div class="project-links">
+                            <a href="https://github.com/ElliotWeiner/TubeBot" class="github-link" target="_blank">
+                                View on GitHub →
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <h3>Hand Sign Detection</h3>
+                    <div class="project-content">
+                        <p class="project-description">
+                            An IoT/ML-based hand sign detection system using custom hardware and deep learning. 
+                            Features real-time detection of basic hand signs through flex sensors and accelerometer data, 
+                            with wireless communication for remote processing.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">C++</span>
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">IoT</span>
+                            <span class="tech-tag">Machine Learning</span>
+                        </div>
+                        <br>
+                        <div class="project-links">
+                            <a href="https://github.com/ElliotWeiner/HandSignDetection" class="github-link" target="_blank">
+                                View on GitHub →
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <h3>SmartSip Coffee Machine</h3>
+                    <div class="project-content">
+                        <p class="project-description">
+                            An autonomous coffee dispenser using computer vision and robotics. Features automated cup 
+                            centering, volume estimation, and multi-liquid proportioning using an Arducam TOF camera 
+                            and custom-built dispensing system.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">C++</span>
+                            <span class="tech-tag">Raspberry Pi</span>
+                            <span class="tech-tag">Arduino</span>
+                            <span class="tech-tag">Computer Vision</span>
+                        </div>
+                        <br>
+                        <div class="project-links">
+                            <a href="https://github.com/ElliotWeiner/Arducam-TOF-Camera-Smart-Coffee-Machine" class="github-link" target="_blank">
+                                View on GitHub →
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <h3 class="section-subheading">Contact</h3>
+                <div class="projects-grid" style="grid-template-columns: 1fr 1fr;">
+                    <div class="project-card">
+                        <p style="margin-top: 1rem;">🔗 <a href="https://www.linkedin.com/in/elliotweiner/" class="github-link" target="_blank">LinkedIn Profile</a></p>
+                        <p>💻 <a href="https://github.com/ElliotWeiner" class="github-link" target="_blank">GitHub Profile</a></p>
+                    </div>
+                    <div class="project-card">
+                        <p>📧 <a href="mailto:elweiner@bu.edu" class="github-link">elweiner@bu.edu</a></p>
+                        <p style="margin-top: 1rem;">📱 <a href="tel:2017072901" class="github-link">201-707-2901</a></p>
+                    </div>
+                </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Elliot Weiner</p>
+        </div>
+    </footer>
+</body>
+</html> 
