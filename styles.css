@@ -243,6 +243,12 @@ h3.section-subheading:nth-of-type(2) {
     grid-template-columns: 350px 1fr;
     gap: 2rem;
     align-items: center;
+    margin-bottom: 2rem;
+}
+
+.about-grid .content-card {
+    margin: 0;
+    height: 100%;
 }
 
 .profile-image {
